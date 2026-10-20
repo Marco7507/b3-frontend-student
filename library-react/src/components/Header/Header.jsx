@@ -1,12 +1,13 @@
 import styles from './Header.module.css'
+import { Link } from 'react-router'
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <nav>
         <ul>
-          <li><a href="index.html" aria-current="page">Bibliothèque</a></li>
-          <li><a href="index.html" aria-current="page">Contact</a></li>
+          <li><Link to="/" aria-current="page">Bibliothèque</Link></li>
+          <li><Link to="/contact" aria-current="page">Contact</Link></li>
         </ul>
       </nav>
     </header>
