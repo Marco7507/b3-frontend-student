@@ -81,6 +81,7 @@ export default function Home() {
           {books.map((book) => (
             <BookCard
               key={book.id}
+              id={book.id}
               cover={book.volumeInfo.imageLinks?.thumbnail || './assets/moby-dick.png'}
               title={book.volumeInfo.title}
               author={book.volumeInfo.authors?.join(', ') || ''}

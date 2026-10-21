@@ -8,7 +8,7 @@ export default function App() {
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/book" element={<Book />} />
+        <Route path="/book/:id" element={<Book />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
